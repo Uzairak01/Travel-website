@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel with us</title>
+    <!-- tittle icon -->
+    <link rel="icon" href="pics/logo.png" type="image/x-icon" />
+
+    <!-- Bootstrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Link -->
+
+    <!-- bootstrap icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- bootstrap icon link -->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font -->
+  </head>
+
+  <body>
+    <header>
+      <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg bg-transparent fixed-top" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="/" id="logo"><span>T</span>ravel</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#book">Book</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#packages">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#about"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#about">About Us</a>
+                  </li>
+                  <hr />
+                  <li>
+                    <a class="dropdown-item" href="Ourteam.html">Our Team</a>
+                    <hr />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success me-2" type="submit">
+                Search
+              </button>
+              <button class="btn btn-outline-success" type="submit">
+                <a href="login.html" class="loginBtn">Login</a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+    </header>
+
+    <main>
+      <!-- section-1 home start -->
+      <section class="home" id="home">
+        <div class="home container-fluid">
+          <div class="content text-center">
+            <h4 class="textsize fw-bold text-light">Travel The World</h4>
+            <h1 class="textSize fw-bold text-light">
+              Visit <span class="contentchange"></span>
+            </h1>
+            <p class="fs-4 fw-semibold text-light">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus molestias minus dolor in
+            </p>
+            <a
+              href="#book"
+              class="fs-5 fw-bold text-light btn btn-outline-success"
+              data-bs-toggle="tooltip"
+              data-bs-title="Book the place you want to travel"
+              >Book Places</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- section-1 home end -->
+
+      <!-- button to move up start -->
+        <div class="btnstyle">
+          <a href="/" class="upbtn"><i class="bi bi-arrow-up-circle-fill"></i></a>
+        </div>
+      <!-- button to move up end -->
+
+      <!-- section-2 book start -->
+      <section class="book" id="book">
+        <div class="container">
+          <div class="main-text">
+            <h1 class="text-center fw-bold"><span>B</span>ook</h1>
+          </div>
+
+          <div class="row mt-4">
+            <!-- card image -->
+            <div class="col-md-6 py-3 py-md-0">
+              <div class="card shadow">
+                <img src="pics/book-img.png" alt="book your destination" />
+              </div>
+            </div>
+            <!-- card form -->
+            <div class="col-md-6 py-3 py-md-0">
+              <form action="#" class="p-">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Where to ?"
+                  required
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="How many days ?"
+                  required
+                />
+                <input
+                  type="date"
+                  class="form-control"
+                  placeholder="From when ?"
+                  required
+                />
+                <input
+                  type="date"
+                  class="form-control"
+                  placeholder="To when ?"
+                  required
+                />
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  name="text"
+                  placeholder="Name Adress & further details..."
+                ></textarea>
+                <input
+                  type="submit"
+                  value="Book Now"
+                  class="submit px-3 fw-semibold"
+                  required
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section-2 book end -->
+
+      <!-- section-3 packages start -->
+      <section class="packages" id="packages">
+        <div class="container">
+          <div class="main-text mt-5">
+            <h1 class="text-center fw-bold"><span>P</span>ackages</h1>
+          </div>
+
+          <!-- cards start row 1-->
+          <div class="row mt-5">
+            <!-- card 1 -->
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow">
+                <img
+                  src="pics/uk.png"
+                  class="card-img-top"
+                  alt="United Kingdom" style="height: 279px;"
+                />
+                <div class="card-body">
+                  <h3 class="fw-semibold">United Kingdom</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nulla, vitae!
+                  </p>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <h6 class="mt-2">Price: <strong>$500</strong></h6>
+                  <a
+                    href="#book"
+                    class="fw-semibold d-flex justify-content-center"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow">
+                <img src="pics/france.png" class="card-img-top" alt="France" style="height: 279px;" />
+                <div class="card-body">
+                  <h3 class="fw-semibold">France</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nulla, vitae!
+                  </p>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <h6 class="mt-2">Price: <strong>$500</strong></h6>
+                  <a
+                    href="#book"
+                    class="fw-semibold d-flex justify-content-center"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow">
+                <img
+                  src="pics/Pakistan.jpg"
+                  class="card-img-top"
+                  alt="Pakistan" style="height: 279px;"
+                />
+                <div class="card-body card3">
+                  <h3 class="fw-semibold">Pakistan</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nulla, vitae!
+                  </p>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <h6 class="mt-2">Price: <strong>$500</strong></h6>
+                  <a
+                    href="#book"
+                    class="fw-semibold d-flex justify-content-center"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- cards end row 1-->
+
+          <!-- cards start row 2-->
+          <div class="row mt-5">
+            <!-- card 1 -->
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow">
+                <img
+                  src="pics/us.png"
+                  class="card-img-top"
+                  alt="United State" style="height: 279px;"
+                />
+                <div class="card-body">
+                  <h3 class="fw-semibold">United State</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nulla, vitae!
+                  </p>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <h6 class="mt-2">Price: <strong>$500</strong></h6>
+                  <a
+                    href="#book"
+                    class="fw-semibold d-flex justify-content-center"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow">
+                <img src="pics/italy.png" class="card-img-top" alt="Italy" style="height: 279px;"/>
+                <div class="card-body">
+                  <h3 class="fw-semibold">Italy</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nulla, vitae!
+                  </p>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <h6 class="mt-2">Price: <strong>$500</strong></h6>
+                  <a
+                    href="#book"
+                    class="fw-semibold d-flex justify-content-center"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow">
+                <img src="pics/india.png" class="card-img-top" alt="India" style="height: 279px;"/>
+                <div class="card-body">
+                  <h3 class="fw-semibold">India</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nulla, vitae!
+                  </p>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <h6 class="mt-2">Price: <strong>$500</strong></h6>
+                  <a
+                    href="#book"
+                    class="fw-semibold d-flex justify-content-center"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- cards end row 2-->
+
+          <!-- cards start row 3-->
+          <div class="row mt-5">
+            <!-- card 1 -->
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow">
+                <img src="pics/Dubai.jpg" class="card-img-top" alt="Dubai" style="height: 279px;"/>
+                <div class="card-body card7">
+                  <h3 class="fw-semibold">Dubai</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nulla, vitae!
+                  </p>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <h6 class="mt-2">Price: <strong>$500</strong></h6>
+                  <a
+                    href="#book"
+                    class="fw-semibold d-flex justify-content-center"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow">
+                <img src="pics/Turkey.jpg" class="card-img-top" alt="Turkey" style="height: 279px;"/>
+                <div class="card-body">
+                  <h3 class="fw-semibold">Turkey</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nulla, vitae!
+                  </p>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <h6 class="mt-2">Price: <strong>$500</strong></h6>
+                  <a
+                    href="#book"
+                    class="fw-semibold d-flex justify-content-center"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow">
+                <img
+                  src="pics/Saudi Arabia.jpg"
+                  class="card-img-top"
+                  alt="SaudiArabia" style="height: 279px;"
+                />
+                <div class="card-body card9">
+                  <h3 class="fw-semibold">Saudi Arabia</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nulla, vitae!
+                  </p>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <h6 class="mt-2">Price: <strong>$500</strong></h6>
+                  <a
+                    href="#book"
+                    class="fw-semibold d-flex justify-content-center"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- cards end row 3-->
+
+          <!-- cards start row 4-->
+          <div class="row mt-5">
+            <!-- card 1 -->
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow">
+                <img src="pics/Japan.jpg" class="card-img-top" alt="Japan" style="height: 279px;"/>
+                <div class="card-body card10">
+                  <h3 class="fw-semibold">Japan</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nulla, vitae!
+                  </p>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <h6 class="mt-2">Price: <strong>$500</strong></h6>
+                  <a
+                    href="#book"
+                    class="fw-semibold d-flex justify-content-center"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow">
+                <img
+                  src="pics/south-korea.jpg"
+                  class="card-img-top"
+                  alt="South Korea" style="height: 279px;"
+                />
+                <div class="card-body card11">
+                  <h3 class="fw-semibold">South Korea</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nulla, vitae!
+                  </p>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <h6 class="mt-2">Price: <strong>$500</strong></h6>
+                  <a
+                    href="#book"
+                    class="fw-semibold d-flex justify-content-center"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow">
+                <img src="pics/China.webp" class="card-img-top" alt="China" style="height: 279px;"/>
+                <div class="card-body card9">
+                  <h3 class="fw-semibold">China</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nulla, vitae!
+                  </p>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <h6 class="mt-2">Price: <strong>$500</strong></h6>
+                  <a
+                    href="#book"
+                    class="fw-semibold d-flex justify-content-center"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- cards end row 4-->
+        </div>
+      </section>
+      <!-- section-3 packages end -->
+
+      <!-- section-4 services start -->
+      <section class="services mb-3" id="services">
+        <div class="container">
+          <div class="main-text mt-5">
+            <h1 class="text-center fw-bold"><span>S</span>ervices</h1>
+          </div>
+          <!-- cards start row 1-->
+          <div class="row mt-5">
+            <!-- card 1 -->
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow">
+                <div class="icon text-center">
+                  <i class="bi bi-airplane-fill"></i>
+                </div>
+                <div class="card-body card10">
+                  <h3 class="fw-semibold text-center">Fast Travel</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nulla, vitae!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow">
+                <div class="icon text-center">
+                  <i class="bi bi-building-fill-check"></i>
+                </div>
+                <div class="card-body card10">
+                  <h3 class="fw-semibold text-center">Affordable Hotels</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nulla, vitae!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow">
+                <div class="icon text-center">
+                  <i class="bi bi-cup-straw"></i>
+                </div>
+                <div class="card-body card10">
+                  <h3 class="fw-semibold text-center">Food & Drinks</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nulla, vitae!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- cards end row 1-->
+
+          <!-- cards start row 2-->
+          <div class="row mt-5">
+            <!-- card 1 -->
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow">
+                <div class="icon text-center">
+                  <i class="bi bi-headset"></i>
+                </div>
+                <div class="card-body card10">
+                  <h3 class="fw-semibold text-center">Safty Guids</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nulla, vitae!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow">
+                <div class="icon text-center">
+                  <i class="bi bi-person-arms-up"></i>
+                </div>
+                <div class="card-body card10">
+                  <h3 class="fw-semibold text-center">Travel Adventures</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nulla, vitae!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card shadow">
+                <div class="icon text-center">
+                  <i class="bi bi-hearts"></i>
+                </div>
+                <div class="card-body card10">
+                  <h3 class="fw-semibold text-center">Umrah & Hajj</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nulla, vitae!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cards end row 2-->
+      </section>
+      <!-- section-4 services end -->
+
+      <!-- section-5 gallery start -->
+       <section class="gallery mb-4" id="gallery">
+        <div class="container-fluid">
+          <div class="main-text mt-5">
+            <h1 class="text-center fw-bold"><span>G</span>allery</h1>
+          </div>
+
+          <!-- gallery card start -->
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active text-center" data-bs-interval="10000">
+                <img src="pics/g1.png" class="galleryImage" alt="Egypt">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="fw-bold text-light">The Desert Land Of Egypt</h3>
+                  <p class="text-light">Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item active text-center" data-bs-interval="10000">
+                <img src="pics/g2.png" class="galleryImage" alt="Turkey">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="fw-bold text-light">A view of Turkey</h3>
+                  <p class="text-dark">Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item active text-center" data-bs-interval="10000">
+                <img src="pics/g3.png" class="galleryImage" alt="Dubai">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="fw-bold text-light">The Buildings of Dubai</h3>
+                  <p class="text-light">Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item active text-center" data-bs-interval="10000">
+                <img src="pics/g4.png" class="galleryImage" alt="France">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="fw-bold text-light">The Iphle Tower of France</h3>
+                  <p class="text-light">Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item active text-center" data-bs-interval="10000">
+                <img src="pics/g5.png" class="galleryImage" alt="Germany">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="fw-bold text-light">Ballons in Germany</h3>
+                  <p class="text-light">Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item active text-center" data-bs-interval="10000">
+                <img src="pics/g6.png" class="galleryImage" alt="Turkey">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="fw-bold text-light">The Mosque of Turkey</h3>
+                  <p class="text-light">Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- gallery card end -->
+        </div>
+       </section>
+      <!-- section-5 gallery end -->
+
+      <!-- section-6 about start -->
+       <section class="about" id="about">
+        <div class="container mt-5 py-3">
+          <div class="main-text mt-5">
+            <h1 class="text-center fw-bold">About <span>Us</span></h1>
+          </div>
+          
+          <!-- about card start -->
+          <div class="row mt-4">
+            <!-- card image -->
+            <div class="col-md-6 py-3 py-md-0">
+              <div class="card shadow mt-4">
+                <img src="pics/about-img.png" class="rounded shadow" alt="book your destination" />
+              </div>
+            </div>
+            <!-- card text -->
+            <div class="col-md-6 py-3 py-md-0">
+              <div class="text">
+                <h2 class="fw-bold mt-4">How Our Travel Agency Work</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia necessitatibus perspiciatis corrupti libero ad voluptatum maxime incidunt amet debitis iste provident, minima sit consectetur enim id, consequuntur, voluptatibus reiciendis veritatis eligendi facilis eius distinctio commodi officiis sequi? Nostrum, at dolorum. Reiciendis ad nulla quibusdam deserunt possimus dolorum itaque aliquam veritatis.</p>
+              </div>
+              <div class="btn">
+                <a href="Ourteam.html" class="fw-bold p-3">Know About Our Team...</a>
+              </div>
+            </div>
+          </div>
+          <!-- about card end -->
+        </div>
+       </section>
+      <!-- section-6 about end -->  
+    </main>
+
+    <footer>
+      <!-- footer section 1 start -->
+      <div class="container-fluid footer">
+        <div class="main-text">
+          <h1 class="text-center"><span>T</span>ravel</h1>
+          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem alias quas voluptatibus corporis adipisci incidunt a at perferendis labore deleniti.</p>
+        </div>        
+        <!-- links -->
+         <div class="links d-flex justify-content-center">
+            <div class="facebook">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+            </div>
+            <div class="insta">
+              <a href=""><i class="bi bi-instagram"></i></a>
+            </div>
+            <div class="twitter">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+            </div>
+         </div>
+         <!-- developer name -->
+          <div class="devName text-center">
+            <h6 class="mt-2">Designed By UAK(Uzair Ahmad Khan) Codes</h6>
+          </div>
+      </div>
+      <!-- footer section 1 end -->
+
+      <!-- footer section 2 start -->
+      <div class="UAK">
+        <div class="container-fluid text-center">
+          <h6 class="fw-semibold py-3">&copy; Copy-right 2024 Uzair Ahmad Khan | All right received:</h6>
+        </div>
+      </div>
+      <!-- footer section 2 end -->
+    </footer>
+
+    <!-- script bootstrap link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <!-- script bootstrap link -->
+  </body>
+</html>

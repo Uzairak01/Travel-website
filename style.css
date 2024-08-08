@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    transition-delay: 4s ease;
+}
+
+:root{
+    --orange-clr: #ffa500;
+    --white-clr: #ffffff;
+    --black-clr: #000000;
+    --background-clr: #efefef;
+}
+
+/* navbar start */
+#navbar{
+    background: transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#logo{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--black-clr);
+    text-shadow: 0px 1px 1px var(--black-clr);
+    margin-bottom: 5px;
+}
+#logo span{
+    color: var(--orange-clr);
+}
+
+.navbar-toggler span{
+    color: var(--orange-clr);
+}
+
+.navbar-nav{
+    margin-left: 20px;
+}
+
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: var(--black-clr);
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: .3s ease;
+}
+.nav-item .nav-link:hover{
+    background: var(--orange-clr);
+    color: var(--white-clr);
+}
+
+#navbar form button{
+    background: var(--orange-clr);
+    color: var(--white-clr);
+    border: none;
+} 
+#navbar form button:hover{
+    background: var(--white-clr);
+    color: var(--orange-clr);
+    border: 2px solid var(--orange-clr);
+}
+
+.loginBtn{
+    text-decoration: none;
+    color: var(--white-clr);
+}
+.loginBtn:hover{
+    background: var(--white-clr);
+    color: var(--orange-clr);
+    border: 2px solid var(--orange-clr);
+}
+/* navbar end */
+
+/* section-home start */
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(pics/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.textsize{
+    font-size: 42px;
+}
+
+.textSize{
+    font-size: 78px;
+}
+
+.contentchange::after{
+    content: '';
+    color: var(--orange-clr);
+    animation: changetxt 20s infinite linear;
+}
+@keyframes changetxt {
+    0%{content: "France";}
+    10%{content: "Spain";}
+    20%{content: "United States";}
+    30%{content: "China";}
+    40%{content: "India";}
+    50%{content: "Pakistan";}
+    60%{content: "Italy";}
+    70%{content: "Turky";}
+    80%{content: "Mexico";}
+    90%{content: "Germany";}
+    100%{content: "United Kingdom";}
+}
+
+.home a{
+    background: transparent;
+    backdrop-filter: blur(5px);
+    color: var(--white-clr);
+    border: 2px solid;
+    transition: transform .3s ease;
+}
+.home a:hover{
+    background: var(--orange-clr);
+    border: 2px solid var(--white-clr);
+    transform: scale(1.1);
+}
+/* section-home end */
+
+/* section book strat */
+    .book{
+        background: var(--background-clr);
+        padding: 50px;
+    }
+
+    .book h1 span{
+        color: var(--orange-clr);
+    }
+
+    .book .card{
+        border-radius: 10px;
+    }
+
+    .book form input{
+        margin: 10px;
+        padding: 10px;
+        color: var(--black-clr);
+        border: none;
+        outline: none;
+        font-size: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px -6px black;
+    }
+
+    .book form textarea{
+        margin-left: 10px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px -6px black;
+        height: 200px;
+    }
+
+    .book form .submit{
+        background: var(--background-clr);
+        color: var(--black-clr);
+        border: 3px solid var(--white-clr);
+        transition: transform .3s ease;
+    }
+    .book form .submit:hover{
+        background: var(--orange-clr);
+        color: var(--white-clr);
+        border: 2px solid var(--white-clr);
+        transform: translateX(10px);
+    }
+/* section book end */
+
+/* section packages start */
+.packages{
+    background: var(--white-clr);
+
+}
+
+.packages h1 span{
+    color: var(--orange-clr);
+}
+
+.packages .card .card-body a{
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    background: var(--orange-clr);
+    color: var(--white-clr);
+    border: 3px solid var(--white-clr);
+}
+/* section packages end */
+
+/* section services start */
+.services{
+    background: var(--background-clr);
+}
+
+.services .main-text span{
+    color: var(--orange-clr);
+}
+
+.services .card .icon{
+    font-size: 60px;
+    color: var(--orange-clr);
+    transition: transform 0.3s ease;
+}
+
+.services .card .icon:hover{
+    transform: scale(1.2);
+}
+/* section services end */
+
+/* section gallry start */
+.gallery .main-text span{
+    color: var(--orange-clr);
+}
+
+.gallery .carousel-inner .carousel-item .galleryImage{
+    width: 80vw;
+    height: 550px;
+}
+/* section gallry end */
+
+/* section about start */
+.about{
+    background: var(--background-clr);
+}
+
+.about .main-text span{
+    color: var(--orange-clr);
+}
+
+.about .btn{
+    background: var(--background-clr);
+    border: 2px solid var(--black-clr);
+    transition: transform .3s ease;
+}
+.about .btn:hover{
+    background: var(--orange-clr);
+    color: var(--white-clr);
+    border: 3px solid var(--white-clr);
+    transform: translateX(10px);
+}
+
+.about .btn a{
+    text-decoration: none;
+    color: var(--black-clr);
+}
+.about .btn a:hover{
+    color: var(--white-clr);
+}
+/* section about end */
+
+/* footer start */
+.footer{
+    margin-top: 100px;
+}
+
+.footer  .main-text span{
+    color: var(--orange-clr);
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.footer .main-text h1{
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.footer .links{
+    gap: 40px;
+}
+
+.footer .links .facebook{
+    font-size: 40px;
+}
+.footer .links .insta{
+    font-size: 40px;
+}
+.footer .links .twitter{
+    font-size: 40px;
+}
+
+.footer .links a{
+    text-decoration: none;
+    color: var(--black-clr);
+}
+
+footer .UAK{
+    height: 50px;
+    background: rgba(206, 206, 206, 0.875);
+}
+/* footer end */
+
+/* our team page start */
+.ourTeam{
+    background: var(--background-clr);
+}
+
+.ourTeam .main-text span{
+    color: var(--orange-clr);
+}
+/* our team page end */
+
+/* contactUs page start */
+.contactus .main-text span{
+    color: var(--orange-clr);
+}
+
+.exchange{
+    background: var(--background-clr);
+}
+
+.exchange .container .card .icon{
+    font-size: 60px;
+    color: var(--orange-clr);
+    transition: transform 0.3s ease;
+}
+
+.exchange .container .card .icon:hover{
+    transform: scale(1.2);
+}
+/* contactUs page end */
+
+/* login page start */
+.login{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(pics/Backgroung.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.login .main-text h1{
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.login .container .loginForm{
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid var(--white-clr);
+    background: transparent;
+    backdrop-filter: blur(5px);
+    color: var(--white-clr);
+    font-weight: 700;
+    text-align: center;
+}
+
+.login .container .loginForm a{
+    text-decoration: none;
+    color: var(--white-clr);
+}
+
+.login .container .loginForm a:hover{
+    text-decoration: underline;
+}
+
+.login .container .loginForm .regforgot{
+    display: flex;
+    justify-content: space-around;
+}
+
+.login .container .loginForm .regforgot .forgot:hover{
+    text-decoration: underline;
+}
+/* login page end */
+
+/* arrow up btn start */
+.btnstyle{
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    font-size: 40px;
+    z-index: 99;
+}
+.upbtn{
+    color: var(--orange-clr);
+}
+/* arrow up btn end */
