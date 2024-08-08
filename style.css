@@ -393,5 +393,10 @@ footer .UAK{
 }
 .upbtn{
     color: var(--orange-clr);
+    display: none;
+}
+
+.upbtnScrolled{
+    display: block;
 }
 /* arrow up btn end */
